@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-project',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-project.component.css']
 })
 export class CardProjectComponent implements OnInit {
+
+  @Input() urlImg:string = '';
+  data!:Array<any>;
 
   constructor() { }
 

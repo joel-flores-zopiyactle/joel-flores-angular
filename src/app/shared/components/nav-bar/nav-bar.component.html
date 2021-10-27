@@ -6,10 +6,11 @@
       <div class="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
         <a
         *ngFor="let ruta of links"
-        href="{{ruta.route}}"
+        [routerLink]="ruta.route"
         class="text-gray-800 dark:text-gray-200 mx-1.5 sm:mx-6"
-        routerLinkActive="['border-b-2','border-blue-500']"
-        >{{ruta.name}}</a>
+        routerLinkActive="active"
+        >{{ruta.name}}
+      </a>
       </div>
   </div>
 </nav>
